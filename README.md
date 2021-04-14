@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style/style.css">
+<!-- <link rel="stylesheet" href="style/style.css"> -->
 
 # Cascade on Windows
 
@@ -19,7 +19,7 @@
 </div>
 </div>
 
-<div class="bg-light py-6 rounded">
+<div class="bg-light py-5 rounded">
     <h3>1º - É necessario ter instalado as seguintes ferramentas</h3>
     <li class="bg-white">Python</li>
     <li class="bg-light">Numpy</li>
@@ -89,3 +89,74 @@
     estágios(quanto maior mais preciso se torna, mas o tempo também aumenta):</p>
 <p class="bg-dark text-light"> > python treinar.py</p>
 </div>
+
+
+<style>
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+.py-4 {
+  padding-top: 1.5rem !important;
+}
+.px-4 {
+  padding-right: 1.5rem !important;
+}
+.py-2 {
+  padding-top: 0.5rem !important;
+}
+.py-4 {
+  padding-bottom: 1.5rem !important;
+}
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.px-5 {
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+}
+.rounded {
+  border-radius: 0.25rem !important;
+}
+.bg-danger {
+  background-color: #dc3545 !important;
+  color: white;
+}
+.bg-dark {
+  background-color: #343a40 !important;
+  color: white;
+}
+.bg-light {
+  background-color: #f8f9fa !important;
+  color: black;
+}
+.bg-white {
+  background-color: #fff !important;
+  color: black;
+}
+.text-light {
+  color: #f8f9fa !important;
+}
+.bg-info {
+  background-color: #17a2b8 !important;
+  color: black;
+}
+.bg-warning {
+  background-color: #ffc107 !important;
+  color: white;
+}
+.justify-content-center {
+  justify-content: center !important;
+}
+.d-flex {
+  display: flex !important;
+}
+
+</style>
