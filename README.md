@@ -1,9 +1,6 @@
-<html>
-<head>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-<h1 class="bg-dark text-light d-flex rounded justify-content-center">Cascade on Windows</h1>
+<link rel="stylesheet" href="style/style.css">
+
+# Cascade on Windows
 
 <div class="bg-info py-2 rounded">
     <div class="d-flex justify-content-center">ATENÇÃO</div>
@@ -92,7 +89,3 @@
     estágios(quanto maior mais preciso se torna, mas o tempo também aumenta):</p>
 <p class="bg-dark text-light"> > python treinar.py</p>
 </div>
-</body>
-</html>
-
-
