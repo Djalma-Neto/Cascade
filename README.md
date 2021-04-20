@@ -1,7 +1,6 @@
+<h1 align="center"> OpenCV e Cascade no Windows</h1>
 
-# OpenCV e Cascade no Windows
-
-<h1 align="center">
+<h1 style="height: 300px" align="center">
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="public/opencv.png" />
 </h1>
 
@@ -11,6 +10,7 @@
         NECESSARIO MUDAR ALGUMAS LINHAS DE CÓDIGO POIS A SINTAXE IRÁ MUDAR!!
     </div>
 </div>
+
 
 <div style="margin-top: 10px; background-color: orange; border-radius: 10px;">
 <div>
