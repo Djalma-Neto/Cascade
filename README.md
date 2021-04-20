@@ -1,8 +1,8 @@
 <h1 align="center"> OpenCV e Cascade no Windows</h1>
 
-<h1 style="height: 300px" align="center">
+<div style="height: 300px; padding-bottom: 10px;" align="center">
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="public/opencv.png" />
-</h1>
+</div>
 
 <div style="background-color: red; border-radius: 10px;">
     <div align="center">ATENÇÃO</div>
