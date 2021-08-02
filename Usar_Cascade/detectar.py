@@ -11,7 +11,6 @@ class Captura:
 	def __init__(self,camera=0):
 		self.vid = cv2.VideoCapture(camera)
 
-
 		self.width = self.vid.get(cv2.CAP_PROP_FRAME_WIDTH)
 		self.height = self.vid.get(cv2.CAP_PROP_FRAME_HEIGHT)
 
