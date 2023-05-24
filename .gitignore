@@ -8,6 +8,10 @@ positivas
 feias
 ProcessamentoImagens/*.pdf
 
+*.jpg
+*.png
+*.jpeg
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
