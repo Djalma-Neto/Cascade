@@ -1,11 +1,15 @@
 # arquivos e diretorios
 
-infos
-vetores
-data
-negativas
-positivas
-feias
+treinar_cascade/infos
+treinar_cascade/vetores
+treinar_cascade/data
+treinar_cascade/negativas
+treinar_cascade/antigaForma
+treinar_cascade/positivas
+treinar_cascade/feias
+treinar_cascade/objetos
+treinar_cascade/amostras
+treinar_cascade/bg.*
 ProcessamentoImagens/*.pdf
 
 *.jpg
