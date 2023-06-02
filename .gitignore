@@ -1,7 +1,7 @@
 # arquivos e diretorios
 
-treinar_cascade/infos
-treinar_cascade/vetores
+treinar_cascade/info
+treinar_cascade/vecs
 treinar_cascade/data
 treinar_cascade/negativas
 treinar_cascade/antigaForma
@@ -9,8 +9,15 @@ treinar_cascade/positivas
 treinar_cascade/feias
 treinar_cascade/objetos
 treinar_cascade/amostras
-treinar_cascade/bg.*
+treinar_cascade/*.pdf
+treinar_cascade/*.xml
+treinar_cascade/*.jpg
+treinar_cascade/*.vec
+
 ProcessamentoImagens/*.pdf
+ProcessamentoImagens/*.xml
+ProcessamentoImagens/*.jpg
+ProcessamentoImagens/*.vec
 
 *.jpg
 *.png

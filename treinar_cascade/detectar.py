@@ -1,10 +1,11 @@
 import cv2
 
 img = cv2.imread('teste.jpg')
+# img = cv2.imread('teste2.jpg')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 img2 = cv2.GaussianBlur(img, (5,5),0)
 
-clf1 = cv2.CascadeClassifier('cascade.xml')
+clf1 = cv2.CascadeClassifier('./data/cascade.xml')
 detecta = clf1.detectMultiScale(img, 1.3, 15)
 
 detecta2 = clf1.detectMultiScale(img2, 1.3, 15)
