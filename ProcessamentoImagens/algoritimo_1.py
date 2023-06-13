@@ -228,66 +228,58 @@ def gerEdges(img):
                 else:
                      newImage[l,c] = 255
     return newImage
+
+def getWidth(img):
+    L = img.shape[0]
+    C = img.shape[1]
+
+    grid = []
+
+    for c in range(C):
+        array = []
+        for l in range(L):
+            if(img[l,c] == 255):
+                array.append([c,1])
+            else:
+                array.append([c,0])
+        grid.append(array)
+
+    for item in range(len(grid)):
+        count = 0
+        for x in grid[item]:
+             count += x[1]
+        
+        grid[item] =[(grid[item][0][0]),(count/len(grid[item]))]
+    
+    return img, grid
+
+def check(img, value):
+     print('s')
+
+def getDots(event, C, L, flags, params):
+    global imagem
+    if event == cv2.EVENT_LBUTTONDOWN:
+        cv2.putText(imagem, ("{0} : {1}".format(L,C)), (C,L), cv2.FONT_HERSHEY_SIMPLEX,0.5, (0, 0, 255), 1)
+        cv2.imshow('image', imagem)
+    elif event == cv2.EVENT_RBUTTONDOWN:
+        imagem = cv2.imread('IMG_1.jpg')
+        cv2.imshow('image', imagem)
+        cv2.setMouseCallback('image', getDots)
 # ================================================= Dimensão ===========================================
-
-# imagem = cv2.imread('caneca.jpg')
-# imagem = cv2.imread('canecaM.jpg')
-# imagem1 = escalaCinza(imagem)
-# imagem2 = redimencionar(imagem1)
-# imagem3 = redimencionar(imagem2)
-
-# cv2.imshow('Original', imagem1)
-# cv2.imshow('Modificada 50%', imagem2)
-# cv2.imshow('Modificada 25%', imagem3)
-
-# cv2.waitKey(0)
-# cv2.destroyAllWindows()
-
-# ========================================== Equalização Translação ======================================
-# imagem = cv2.imread('canecaM.jpg')
-# imagem = escalaCinza(imagem)
-
-# imagem2 = equalizarTranslacao(imagem)
-
-# cv2.imshow('Original',imagem)
-# cv2.imshow('Equalizada',imagem2)
-# graficoHistograma(imagem, 'Imagem Original Histograma')
-# graficoHistograma(imagem2, 'Imagem Equalizada Histograma')
-
-
-#================================================ Equalização =============================================
-
-# imagem = cv2.imread('paisagem.jpeg')
-# imagem = cv2.imread('canecaM.jpg')
-# imagem = escalaCinza(imagem)
-
-# cv2.imshow('Escala de cinza',imagem)
-# graficoHistograma(imagem, 'Imagem Original Histograma')
-# graficoHistogramaCumulativo(imagem, 'Imagem Original Histograma Cumulativo')
-# cv2.destroyAllWindows()
-
-# imagem2 = equalizar(imagem)
-# cv2.imshow('Equalizada',imagem2)
-# graficoHistograma(imagem2, 'Imagem Equalizada Histograma')
-# graficoHistogramaCumulativo(imagem2, 'Imagem Equalizada Histograma Cumulativo')
-
-# cv2.imshow('Escala de cinza',imagem)
-# cv2.imshow('Imagem Equalizada',imagem2)
-
-# ==================================================== Bordas ===============================================
-# imagem = cv2.imread('paisagem.jpeg')
-# imagem = cv2.imread('canecaM.jpg')
-imagem = cv2.imread('estrada.jpg')
+# [84, 0.19642857142857142]
+imagem = cv2.imread('IMG_1.jpg')
 imagem = escalaCinza(imagem)
 imagem2 = equalizar(imagem)
 imagem3 = blurred(imagem2)
 imagem4 = gerEdges(imagem3)
+(imagem4, grid) = getWidth(imagem4)
+
 cv2.imshow('Escala de cinza',imagem)
 cv2.imshow('Escala de cinza equalizada',imagem2)
 cv2.imshow('Blurred',imagem3)
 cv2.imshow('Edges',imagem4)
+# print(grid)
 
-# ============================================================================================================
-
+cv2.setMouseCallback('Edges', getDots)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
